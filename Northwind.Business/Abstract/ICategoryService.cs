@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Northwind.Entities.Concrete;
 
-namespace Northwind.DataAccess.Abstract
+namespace Northwind.Business.Abstract
 {
-    public interface ICategoryDal:IEntityRepository<Category>
+    public interface ICategoryService
     {
+        List<Category> GetAll();
     }
 }
